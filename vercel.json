@@ -1,9 +1,10 @@
 {
-  "scripts": {
-    "start": "node server.js"
-  },
   "version": 2,
   "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    },
     {
       "src": "server.js",
       "use": "@vercel/node"
